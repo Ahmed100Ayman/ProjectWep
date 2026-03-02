@@ -70,6 +70,22 @@
     <h2 id="page-title"></h2>
     <div id="page-buttons"></div>
 </div>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <h3>Add Product</h3>
+
+        <input type="text" id="productName" placeholder="Product Name" required>
+        
+        <textarea id="productDesc" placeholder="Product Description" required></textarea>
+        
+        <input type="number" id="productPrice" placeholder="Product Price" required min="1">
+        
+        <input type="file" id="productImage" accept="image/*" required>
+
+        <button class="btn" onclick="saveProduct()">Save</button>
+        <button class="btn reject-btn" onclick="closeModal()">Cancel</button>
+    </div>
+</div>
     <script src="script.js"></script>
 
 </body>
